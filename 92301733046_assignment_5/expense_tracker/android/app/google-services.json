@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "747554933486",
+    "project_id": "expense-tracker-cpmad",
+    "storage_bucket": "expense-tracker-cpmad.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747554933486:android:57de5654f959154ff2c1ff",
+        "android_client_info": {
+          "package_name": "com.example.expense_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtbkTvcLGqsG8sQwISx1Gjr9l15I65kxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,316 @@
+class Quiz {
+  int id;
+  String question;
+  List<String> options;
+  int correctIndex;
+
+  Quiz({
+    required this.id,
+    required this.question,
+    required this.options,
+    required this.correctIndex,
+  });
+}
+
+List<Quiz> quizData = [
+  Quiz(
+    id: 1,
+    question: "What is the capital of France?",
+    options: ["Berlin", "Madrid", "Paris", "Rome"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 2,
+    question: "Which planet is known as the Red Planet?",
+    options: ["Earth", "Mars", "Jupiter", "Venus"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 3,
+    question: "What is the largest mammal?",
+    options: ["Elephant", "Blue Whale", "Giraffe", "Shark"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 4,
+    question: "Which element has the chemical symbol 'O'?",
+    options: ["Gold", "Oxygen", "Osmium", "Silver"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 5,
+    question: "Who painted the Mona Lisa?",
+    options: ["Van Gogh", "Picasso", "Leonardo da Vinci", "Michelangelo"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 6,
+    question: "What is the fastest land animal?",
+    options: ["Cheetah", "Lion", "Horse", "Ostrich"],
+    correctIndex: 0,
+  ),
+  Quiz(
+    id: 7,
+    question: "Which ocean is the largest?",
+    options: ["Atlantic", "Indian", "Pacific", "Arctic"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 8,
+    question: "How many continents are there?",
+    options: ["5", "6", "7", "8"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 9,
+    question: "What is the boiling point of water at sea level?",
+    options: ["90°C", "100°C", "110°C", "120°C"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 10,
+    question: "Who was the first man to walk on the moon?",
+    options: ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Michael Collins"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 11,
+    question: "What is the largest planet in our solar system?",
+    options: ["Earth", "Mars", "Jupiter", "Saturn"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 12,
+    question: "Which gas do plants use for photosynthesis?",
+    options: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 13,
+    question: "What is the square root of 64?",
+    options: ["6", "7", "8", "9"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 14,
+    question: "Which country is known as the Land of the Rising Sun?",
+    options: ["China", "Japan", "Thailand", "India"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 15,
+    question: "Which blood type is known as the universal donor?",
+    options: ["A", "B", "AB", "O-"],
+    correctIndex: 3,
+  ),
+  Quiz(
+    id: 16,
+    question: "Who wrote 'Romeo and Juliet'?",
+    options: ["Charles Dickens", "Mark Twain", "William Shakespeare", "Jane Austen"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 17,
+    question: "What is the hardest natural substance on Earth?",
+    options: ["Gold", "Iron", "Diamond", "Quartz"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 18,
+    question: "Which instrument has keys, pedals, and strings?",
+    options: ["Violin", "Guitar", "Piano", "Drum"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 19,
+    question: "What is the chemical symbol for gold?",
+    options: ["Au", "Ag", "Fe", "Go"],
+    correctIndex: 0,
+  ),
+  Quiz(
+    id: 20,
+    question: "Which desert is the largest in the world?",
+    options: ["Sahara", "Gobi", "Kalahari", "Arctic"],
+    correctIndex: 0,
+  ),
+  Quiz(
+    id: 21,
+    question: "How many colors are in a rainbow?",
+    options: ["5", "6", "7", "8"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 22,
+    question: "Which animal is known as the King of the Jungle?",
+    options: ["Tiger", "Lion", "Elephant", "Bear"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 23,
+    question: "Which is the smallest prime number?",
+    options: ["0", "1", "2", "3"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 24,
+    question: "Which metal is liquid at room temperature?",
+    options: ["Iron", "Mercury", "Aluminum", "Copper"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 25,
+    question: "What is the tallest mountain in the world?",
+    options: ["K2", "Everest", "Kangchenjunga", "Makalu"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 26,
+    question: "Which planet has rings?",
+    options: ["Venus", "Earth", "Saturn", "Mars"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 27,
+    question: "Which continent is the Sahara Desert located on?",
+    options: ["Asia", "Africa", "Australia", "South America"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 28,
+    question: "What is H2O commonly known as?",
+    options: ["Hydrogen", "Oxygen", "Water", "Helium"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 29,
+    question: "Who discovered gravity?",
+    options: ["Albert Einstein", "Isaac Newton", "Galileo", "Nikola Tesla"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 30,
+    question: "What is the freezing point of water in Celsius?",
+    options: ["0°C", "32°C", "100°C", "-10°C"],
+    correctIndex: 0,
+  ),
+  Quiz(
+    id: 31,
+    question: "Which is the longest river in the world?",
+    options: ["Amazon", "Nile", "Yangtze", "Mississippi"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 32,
+    question: "Which part of the plant carries out photosynthesis?",
+    options: ["Root", "Leaf", "Stem", "Flower"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 33,
+    question: "Which is the fastest bird in the world?",
+    options: ["Eagle", "Falcon", "Sparrow", "Ostrich"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 34,
+    question: "Which gas is most abundant in Earth's atmosphere?",
+    options: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 35,
+    question: "What is the currency of Japan?",
+    options: ["Dollar", "Yen", "Won", "Peso"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 36,
+    question: "What is 9 x 9?",
+    options: ["72", "81", "99", "90"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 37,
+    question: "Who was the first President of the United States?",
+    options: ["Abraham Lincoln", "George Washington", "Thomas Jefferson", "John Adams"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 38,
+    question: "Which ocean lies between Africa and Australia?",
+    options: ["Atlantic", "Pacific", "Indian", "Arctic"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 39,
+    question: "Which instrument is used to see tiny objects?",
+    options: ["Telescope", "Microscope", "Periscope", "Binoculars"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 40,
+    question: "What is the national sport of Japan?",
+    options: ["Karate", "Sumo Wrestling", "Judo", "Baseball"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 41,
+    question: "What is the main gas in the Sun?",
+    options: ["Helium", "Hydrogen", "Oxygen", "Carbon"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 42,
+    question: "Which is the smallest country in the world?",
+    options: ["Monaco", "San Marino", "Vatican City", "Liechtenstein"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 43,
+    question: "Which natural satellite orbits Earth?",
+    options: ["Sun", "Moon", "Mars", "Venus"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 44,
+    question: "What is the longest bone in the human body?",
+    options: ["Tibia", "Femur", "Fibula", "Humerus"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 45,
+    question: "Which continent is known as the frozen continent?",
+    options: ["Arctic", "Europe", "Antarctica", "Asia"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 46,
+    question: "Which country gifted the Statue of Liberty to the USA?",
+    options: ["UK", "France", "Germany", "Spain"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 47,
+    question: "What is the national language of China?",
+    options: ["Cantonese", "Mandarin", "Shanghainese", "Tibetan"],
+    correctIndex: 1,
+  ),
+  Quiz(
+    id: 48,
+    question: "Which is the largest island in the world?",
+    options: ["Greenland", "New Guinea", "Madagascar", "Borneo"],
+    correctIndex: 0,
+  ),
+  Quiz(
+    id: 49,
+    question: "Which vitamin is produced when skin is exposed to sunlight?",
+    options: ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin E"],
+    correctIndex: 2,
+  ),
+  Quiz(
+    id: 50,
+    question: "What is the main ingredient in bread?",
+    options: ["Sugar", "Rice", "Flour", "Salt"],
+    correctIndex: 2,
+  ),
+];

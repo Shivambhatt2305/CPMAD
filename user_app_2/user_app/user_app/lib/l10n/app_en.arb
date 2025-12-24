@@ -1,0 +1,12 @@
+{
+    "@@locale":"en",
+    "appTitle":"User App",
+    "home":"Home",
+    "welcome":"Welcome to my app"
+    ,"settings":"Settings",
+    "person":"Person",
+    "darkMode":"Dark Mode",
+    "english":"English",
+    "arabic":"Arabic",
+    "colorScreen":"Color Screen"
+}

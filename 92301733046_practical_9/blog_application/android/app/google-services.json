@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1065502353738",
+    "project_id": "blog-cpmad-app",
+    "storage_bucket": "blog-cpmad-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065502353738:android:2de4e3c080107cd12d79b3",
+        "android_client_info": {
+          "package_name": "com.example.blog_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaA-0oC4hjChhfdv_dBFX2-Vg67k5lMlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
